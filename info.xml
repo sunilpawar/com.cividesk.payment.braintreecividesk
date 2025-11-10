@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<extension key="com.cividesk.payment.braintreecividesk" type="module">
+  <file>braintreecividesk</file>
+  <name>Braintree CiviDesk</name>
+  <description>Braintree Payment Processor</description>
+  <license>AGPL v3</license>
+  <urls>
+    <url desc="Documentation">https://github.com/cividesk/com.cividesk.payment.braintree</url>
+    <url desc="Support">https://github.com/cividesk/com.cividesk.payment.braintree/issues</url>
+  </urls>
+  <downloadUrl>https://github.com/cividesk/com.cividesk.payment.braintree/archive/master.zip</downloadUrl>
+  <maintainer>
+    <author>Nicolas Ganivet</author>
+    <email>nicolas@cividesk.com</email>
+  </maintainer>
+  <releaseDate>2016-11-30</releaseDate>
+  <version>2.0</version>
+  <develStage>stable</develStage>
+  <compatibility>
+    <ver>5.27</ver>
+  </compatibility>
+  <civix>
+    <namespace>CRM/Braintreecividesk</namespace>
+    <format>23.02.1</format>
+  </civix>
+  <mixins>
+    <mixin>mgd-php@1.0.0</mixin>
+  </mixins>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+</extension>
